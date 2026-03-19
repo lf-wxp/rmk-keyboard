@@ -1,6 +1,6 @@
 {
 	"version": 1,
-	"uid": 16882930253541523000,
+	"uid": 16882930253541522617,
 	"layout": [
 		[
 			[
@@ -41,7 +41,7 @@
 				"LSFT(KC_SCOLON)",
 				"KC_N",
 				"KC_M",
-				"KC_COMMA",
+				"TD(0)",
 				"KC_DOT",
 				"KC_RSHIFT"
 			],
@@ -76,7 +76,7 @@
 				"KC_BSPACE"
 			],
 			[
-				"KC_TRNS",
+				"LSFT(KC_GRAVE)",
 				"LSFT(KC_1)",
 				"LSFT(KC_2)",
 				"LSFT(KC_3)",
@@ -85,8 +85,8 @@
 				"LSFT(KC_6)",
 				"LSFT(KC_7)",
 				"LSFT(KC_8)",
-				"KC_EQUAL",
-				"KC_RBRACKET",
+				"LSFT(KC_9)",
+				"LSFT(KC_0)",
 				"USER06"
 			],
 			[
@@ -192,7 +192,7 @@
 				"KC_TRNS"
 			],
 			[
-				"KC_TRNS",
+				"LSFT(KC_GRAVE)",
 				"KC_TRNS",
 				"KC_COMMA",
 				"KC_DOT",
@@ -293,13 +293,7 @@
 			]
 		]
 	],
-	"encoder_layout": [
-		[],
-		[],
-		[],
-		[],
-		[]
-	],
+	"encoder_layout": [[], [], [], [], []],
 	"layout_options": -1,
 	"macro": [
 		[],
@@ -338,176 +332,43 @@
 	"vial_protocol": 6,
 	"via_protocol": 9,
 	"tap_dance": [
-		[
-			"KC_NO",
-			"KC_NO",
-			"KC_NO",
-			"KC_NO",
-			250
-		],
-		[
-			"KC_NO",
-			"KC_NO",
-			"KC_NO",
-			"KC_NO",
-			250
-		],
-		[
-			"KC_NO",
-			"KC_NO",
-			"KC_NO",
-			"KC_NO",
-			250
-		],
-		[
-			"KC_NO",
-			"KC_NO",
-			"KC_NO",
-			"KC_NO",
-			250
-		],
-		[
-			"KC_NO",
-			"KC_NO",
-			"KC_NO",
-			"KC_NO",
-			250
-		],
-		[
-			"KC_NO",
-			"KC_NO",
-			"KC_NO",
-			"KC_NO",
-			250
-		],
-		[
-			"KC_NO",
-			"KC_NO",
-			"KC_NO",
-			"KC_NO",
-			250
-		],
-		[
-			"KC_NO",
-			"KC_NO",
-			"KC_NO",
-			"KC_NO",
-			250
-		]
+		["LGUI(KC_C)", "KC_NO", "LGUI(KC_V)", "KC_NO", 200],
+		["KC_NO", "KC_NO", "KC_NO", "KC_NO", 250],
+		["KC_NO", "KC_NO", "KC_NO", "KC_NO", 250],
+		["KC_NO", "KC_NO", "KC_NO", "KC_NO", 250],
+		["KC_NO", "KC_NO", "KC_NO", "KC_NO", 250],
+		["KC_NO", "KC_NO", "KC_NO", "KC_NO", 250],
+		["KC_NO", "KC_NO", "KC_NO", "KC_NO", 250],
+		["KC_NO", "KC_NO", "KC_NO", "KC_NO", 250]
 	],
 	"combo": [
-		[
-			"KC_NO",
-			"KC_NO",
-			"KC_NO",
-			"KC_NO",
-			"KC_NO"
-		],
-		[
-			"KC_NO",
-			"KC_NO",
-			"KC_NO",
-			"KC_NO",
-			"KC_NO"
-		],
-		[
-			"KC_NO",
-			"KC_NO",
-			"KC_NO",
-			"KC_NO",
-			"KC_NO"
-		],
-		[
-			"KC_NO",
-			"KC_NO",
-			"KC_NO",
-			"KC_NO",
-			"KC_NO"
-		],
-		[
-			"KC_NO",
-			"KC_NO",
-			"KC_NO",
-			"KC_NO",
-			"KC_NO"
-		],
-		[
-			"KC_NO",
-			"KC_NO",
-			"KC_NO",
-			"KC_NO",
-			"KC_NO"
-		],
-		[
-			"KC_NO",
-			"KC_NO",
-			"KC_NO",
-			"KC_NO",
-			"KC_NO"
-		],
-		[
-			"KC_NO",
-			"KC_NO",
-			"KC_NO",
-			"KC_NO",
-			"KC_NO"
-		],
-		[
-			"KC_NO",
-			"KC_NO",
-			"KC_NO",
-			"KC_NO",
-			"KC_NO"
-		],
-		[
-			"KC_NO",
-			"KC_NO",
-			"KC_NO",
-			"KC_NO",
-			"KC_NO"
-		],
-		[
-			"KC_NO",
-			"KC_NO",
-			"KC_NO",
-			"KC_NO",
-			"KC_NO"
-		],
-		[
-			"KC_NO",
-			"KC_NO",
-			"KC_NO",
-			"KC_NO",
-			"KC_NO"
-		],
-		[
-			"KC_NO",
-			"KC_NO",
-			"KC_NO",
-			"KC_NO",
-			"KC_NO"
-		],
-		[
-			"KC_NO",
-			"KC_NO",
-			"KC_NO",
-			"KC_NO",
-			"KC_NO"
-		],
-		[
-			"KC_NO",
-			"KC_NO",
-			"KC_NO",
-			"KC_NO",
-			"KC_NO"
-		]
+		["KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_NO"],
+		["KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_NO"],
+		["KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_NO"],
+		["KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_NO"],
+		["KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_NO"],
+		["KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_NO"],
+		["KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_NO"],
+		["KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_NO"],
+		["KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_NO"],
+		["KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_NO"],
+		["KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_NO"],
+		["KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_NO"],
+		["KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_NO"],
+		["KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_NO"],
+		["KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_NO"]
 	],
 	"key_override": [],
+	"alt_repeat_key": [],
 	"settings": {
 		"2": 50,
 		"6": 100,
-		"7": 115,
+		"7": 125,
 		"18": 0,
-		"19": 0
+		"19": 0,
+		"22": 0,
+		"23": 1,
+		"26": 0,
+		"27": 120
 	}
 }

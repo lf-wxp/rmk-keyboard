@@ -83,7 +83,7 @@ debounce_time = 5
 # Unlock combination: simultaneous press of specified keys
 # Format: [[row, col], [row, col], ...]
 unlock_keys = [[0, 0], [0, 1]] # Keys at (row=0,col=0) and (row=0,col=1)
-vial_enabled = false
+# vial_enabled = false
 
 [ble]
 enabled = true
