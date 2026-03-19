@@ -1,36 +1,75 @@
 # Documentation: https://haobogu.github.io/rmk/keyboard_configuration.html
 [keyboard]
+chip = "nrf52840"
+manufacturer = "Noir Guo"
 name = "Wingxsl"
+product_id = 0x4643
 product_name = "Wingxsl"
 vendor_id = 0x4c4b
-product_id = 0x4643
-manufacturer = "Noir Guo"
-chip = "nrf52840"
 
 [layout]
-rows = 4
 cols = 12
-layers = 5
 keymap = [
+  # 层0 (Base)
+  [
+    ["Tab", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "Backspace"],
+    ["Escape", "A", "S", "D", "F", "G", "H", "J", "K", "L", "Semicolon", "Enter"],
+    ["LShift", "Z", "X", "C", "V", "B", "WM(Semicolon, LShift)", "N", "M", "Comma", "Dot", "RShift"],
+    ["_", "_", "LCtrl", "LGui", "LT(3, LAlt)", "LT(1, Space)", "LT(2, Space)", "LT(3, RGui)", "Slash", "RAlt", "_", "_"],
+  ], # 层1
+  [
+    ["Grave", "Kc1", "Kc2", "Kc3", "Kc4", "Kc5", "Kc6", "Kc7", "Kc8", "Kc9", "Kc0", "Backspace"],
     [
-        ["Escape", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "Backslash"],
-        ["CapsLock", "A", "S", "D", "F", "G", "H", "J", "K", "L", "Semicolon", "Enter"],
-        ["LShift", "Z", "X", "C", "V", "B", "N", "M", "Comma", "Dot", "Slash", "RShift"],
-        ["_", "_", "LCtrl", "WM(Equal,LAlt)", "WM(Grave,LGui)", "Enter", "LT(1, Delete)", "Space", "LT(2, Quote)", "Backspace", "_", "_"]
+      "_",
+      "WM(Kc1, LShift)",
+      "WM(Kc2, LShift)",
+      "WM(Kc3, LShift)",
+      "WM(Kc4, LShift)",
+      "WM(Kc5, LShift)",
+      "WM(Kc6, LShift)",
+      "WM(Kc7, LShift)",
+      "WM(Kc8, LShift)",
+      "Equal",
+      "RightBracket",
+      "_",
     ],
+    ["_", "_", "_", "_", "_", "_", "End", "Left", "Down", "Right", "_", "_"],
+    ["_", "_", "W", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
+  ], # 层2
+  [
+    ["F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F11", "F12"],
+    ["_", "_", "_", "_", "_", "_", "Left", "Down", "Up", "Right", "_", "_"],
+    ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
+    ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
+  ], # 层3
+  [
     [
-        ["Tab", "Kc1", "Kc2", "Kc3", "Kc4", "Kc5", "Kc6", "Kc7", "Kc8", "Kc9", "Kc0", "Backspace"],
-        ["_", "_", "_", "_", "_", "_", "Home", "_", "Up", "LeftBracket", "RightBracket", "F12"],
-        ["_", "_", "_", "_", "_", "_", "End", "Left", "Down", "Right", "_", "Enter"],
-        ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"]
+      "Grave",
+      "WM(Grave, LShift)",
+      "LeftBracket",
+      "RightBracket",
+      "WM(LeftBracket, LShift)",
+      "WM(RightBracket, LShift)",
+      "WM(Kc9, LShift)",
+      "WM(Kc0, LShift)",
+      "Backslash",
+      "WM(Backslash, LShift)",
+      "_",
+      "_",
     ],
-    [
-        ["F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F11", "F12"],
-        ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
-        ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
-        ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"]
-    ],
+    ["_", "_", "Comma", "Dot", "WM(Comma, LShift)", "WM(Dot, LShift)", "WM(Semicolon, LShift)", "Semicolon", "Slash", "WM(Slash, LShift)", "_", "_"],
+    ["_", "_", "WM(Minus, LShift)", "Minus", "WM(Equal, LShift)", "Equal", "Quote", "WM(Quote, LShift)", "_", "_", "_", "_"],
+    ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
+  ], # 层4 (全透明)
+  [
+    ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
+    ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
+    ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
+    ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
+  ],
 ]
+layers = 5
+rows = 4
 
 [rmk]
 # Maximum number of combos keyboard can store
@@ -43,40 +82,45 @@ debounce_time = 5
 [host]
 # Unlock combination: simultaneous press of specified keys
 # Format: [[row, col], [row, col], ...]
-unlock_keys = [[0, 0], [0, 1]]  # Keys at (row=0,col=0) and (row=0,col=1)
+unlock_keys = [[0, 0], [0, 1]] # Keys at (row=0,col=0) and (row=0,col=1)
+vial_enabled = false
 
 [ble]
 enabled = true
 # 电量报告
-battery_adc_pin = "P0_04"
-adc_divider_measured = 2000    # R2 = 2MΩ = 2000kΩ
-adc_divider_total = 2820       # R1+R2 = 820kΩ+2MΩ = 2820kΩ
-default_tx_power = 8
-ble_use_2m_phy = true
+adc_divider_measured = 2000 # R2 = 2MΩ = 2000kΩ
+adc_divider_total = 2820 # R1+R2 = 820kΩ+2MΩ = 2820kΩ
+battery_adc_pin = "P0_04" 
+ble_use_2m_phy = true 
+default_tx_power = 8 
 
 [split]
 connection = "ble"
 
 [split.central]
-rows = 4
+ble_addr = [0x7e, 0xfe, 0x73, 0x9e, 0x66, 0xe3]
+col_offset = 0
 cols = 6
 row_offset = 0
-col_offset = 0
-ble_addr = [0x7e, 0xfe, 0x73, 0x9e, 0x66, 0xe3]
+rows = 4
 [split.central.matrix]
-matrix_type = "normal"
 col_pins = ["P0_10", "P1_06", "P0_29", "P0_08", "P0_06", "P0_31"]
+matrix_type = "normal"
 row_pins = ["P0_02", "P1_11", "P0_09", "P0_24"]
 # row2col = true
 
 [[split.peripheral]]
-rows = 4
+ble_addr = [0x18, 0xe2, 0x21, 0x80, 0xc0, 0xc7]
+col_offset = 6
 cols = 6
 row_offset = 0
-col_offset = 6
-ble_addr = [0x18, 0xe2, 0x21, 0x80, 0xc0, 0xc7]
+rows = 4
 [split.peripheral.matrix]
-matrix_type = "normal"
 col_pins = ["P0_08", "P0_24", "P0_10", "P0_09", "P1_04", "P1_06"]
+matrix_type = "normal"
 row_pins = ["P1_11", "P0_02", "P0_29", "P0_31"]
 # row2col = true
+
+[behavior.morse]
+hold_on_other_press = true
+hold_timeout = "120ms"
