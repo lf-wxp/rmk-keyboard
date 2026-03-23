@@ -42,7 +42,7 @@
 				"KC_N",
 				"KC_M",
 				"TD(0)",
-				"KC_DOT",
+				"TD(1)",
 				"KC_RSHIFT"
 			],
 			[
@@ -296,7 +296,11 @@
 	"encoder_layout": [[], [], [], [], []],
 	"layout_options": -1,
 	"macro": [
-		[],
+		[
+			["down", "KC_LGUI", "KC_LALT"],
+			["tap", "KC_I"],
+			["up", "KC_LGUI", "KC_LALT"]
+		],
 		[],
 		[],
 		[],
@@ -333,7 +337,7 @@
 	"via_protocol": 9,
 	"tap_dance": [
 		["LGUI(KC_C)", "KC_NO", "LGUI(KC_V)", "KC_NO", 200],
-		["KC_NO", "KC_NO", "KC_NO", "KC_NO", 250],
+		["LGUI(KC_R)", "KC_NO", "M0", "KC_NO", 200],
 		["KC_NO", "KC_NO", "KC_NO", "KC_NO", 250],
 		["KC_NO", "KC_NO", "KC_NO", "KC_NO", 250],
 		["KC_NO", "KC_NO", "KC_NO", "KC_NO", 250],
@@ -363,7 +367,7 @@
 	"settings": {
 		"2": 50,
 		"6": 100,
-		"7": 125,
+		"7": 190,
 		"18": 0,
 		"19": 0,
 		"22": 0,
