@@ -10,17 +10,18 @@ vendor_id = 0x4c4b
 [layout]
 cols = 12
 keymap = [
-  # 层0 (Base)
+  # Layer 0 (Base)
   [
     ["Tab", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "Backspace"],
     ["Escape", "A", "S", "D", "F", "G", "H", "J", "K", "L", "Semicolon", "Enter"],
-    ["LShift", "Z", "X", "C", "V", "B", "WM(Semicolon, LShift)", "N", "M", "Comma", "Dot", "RShift"],
-    ["_", "_", "LCtrl", "LGui", "LT(3, LAlt)", "LT(1, Space)", "LT(2, Space)", "LT(3, RGui)", "Slash", "RAlt", "_", "_"],
-  ], # 层1
+    ["LShift", "Z", "X", "C", "V", "B", "WM(Semicolon, LShift)", "N", "M", "TD(0)", "TD(1)", "RShift"],
+    ["_", "_", "LCtrl", "LGui", "LT(3, LAlt)", "LT(1, Space)", "LT(2, Space)", "LT(3, RGui)", "RCtrl", "RAlt", "_", "_"],
+  ],
+  # Layer 1 (Numbers & Symbols)
   [
     ["Grave", "Kc1", "Kc2", "Kc3", "Kc4", "Kc5", "Kc6", "Kc7", "Kc8", "Kc9", "Kc0", "Backspace"],
     [
-      "_",
+      "WM(Grave, LShift)",
       "WM(Kc1, LShift)",
       "WM(Kc2, LShift)",
       "WM(Kc3, LShift)",
@@ -29,19 +30,21 @@ keymap = [
       "WM(Kc6, LShift)",
       "WM(Kc7, LShift)",
       "WM(Kc8, LShift)",
-      "Equal",
-      "RightBracket",
-      "_",
+      "WM(Kc9, LShift)",
+      "WM(Kc0, LShift)",
+      "USER06",
     ],
-    ["_", "_", "_", "_", "_", "_", "End", "Left", "Down", "Right", "_", "_"],
+    ["_", "_", "_", "_", "_", "_", "End", "Left", "Down", "Right", "_", "USER00"],
     ["_", "_", "W", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
-  ], # 层2
+  ],
+  # Layer 2 (F-keys & Mouse)
   [
     ["F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F11", "F12"],
-    ["_", "_", "_", "_", "_", "_", "Left", "Down", "Up", "Right", "_", "_"],
+    ["MouseBtn2", "MouseLeft", "MouseDown", "MouseUp", "MouseDown", "MouseBtn1", "Left", "Down", "Up", "Right", "_", "_"],
+    ["_", "MouseWheelLeft", "MouseWheelDown", "MouseWheelUp", "MouseWheelRight", "_", "_", "_", "_", "_", "_", "_"],
     ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
-    ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
-  ], # 层3
+  ],
+  # Layer 3 (Brackets & Punctuation)
   [
     [
       "Grave",
@@ -57,10 +60,11 @@ keymap = [
       "_",
       "_",
     ],
-    ["_", "_", "Comma", "Dot", "WM(Comma, LShift)", "WM(Dot, LShift)", "WM(Semicolon, LShift)", "Semicolon", "Slash", "WM(Slash, LShift)", "_", "_"],
+    ["WM(Grave, LShift)", "_", "Comma", "Dot", "WM(Comma, LShift)", "WM(Dot, LShift)", "WM(Semicolon, LShift)", "Semicolon", "Slash", "WM(Slash, LShift)", "_", "_"],
     ["_", "_", "WM(Minus, LShift)", "Minus", "WM(Equal, LShift)", "Equal", "Quote", "WM(Quote, LShift)", "_", "_", "_", "_"],
     ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
-  ], # 层4 (全透明)
+  ],
+  # Layer 4 (Transparent)
   [
     ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
     ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
