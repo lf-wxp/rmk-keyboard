@@ -32,9 +32,9 @@ keymap = [
       "WM(Kc8, LShift)",
       "WM(Kc9, LShift)",
       "WM(Kc0, LShift)",
-      "USER06",
+      "User6",
     ],
-    ["_", "_", "_", "_", "_", "_", "End", "Left", "Down", "Right", "_", "USER00"],
+    ["_", "_", "_", "_", "_", "_", "End", "Left", "Down", "Right", "_", "User0"],
     ["_", "_", "W", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
   ],
   # Layer 2 (F-keys & Mouse)
