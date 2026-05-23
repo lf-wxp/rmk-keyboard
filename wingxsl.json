@@ -54,7 +54,7 @@
 				"LT1(KC_SPACE)",
 				"LT2(KC_SPACE)",
 				"LT3(KC_RGUI)",
-				"KC_RCTRL",
+				"M1",
 				"KC_RALT",
 				-1,
 				-1
@@ -96,17 +96,17 @@
 				"KC_TRNS",
 				"KC_TRNS",
 				"KC_TRNS",
-				"KC_END",
-				"KC_LEFT",
-				"KC_DOWN",
-				"KC_RIGHT",
+				"KC_TRNS",
+				"KC_TRNS",
+				"KC_TRNS",
+				"KC_TRNS",
 				"KC_TRNS",
 				"USER00"
 			],
 			[
 				-1,
 				-1,
-				"KC_W",
+				"KC_TRNS",
 				"KC_TRNS",
 				"KC_TRNS",
 				"KC_TRNS",
@@ -228,7 +228,7 @@
 				"KC_TRNS",
 				"KC_TRNS",
 				"KC_TRNS",
-				"KC_TRNS",
+				"M2",
 				"KC_TRNS",
 				-1,
 				-1
@@ -301,8 +301,21 @@
 			["tap", "KC_I"],
 			["up", "KC_LGUI", "KC_LALT"]
 		],
-		[],
-		[],
+		[
+			["down", "KC_LALT"],
+			["tap", "KC_N"],
+			["up", "KC_LALT"],
+			["tap", "KC_N"]
+		],
+		[
+			["down", "KC_LALT"],
+			["tap", "KC_N"],
+			["up", "KC_LALT"],
+			["delay", 20],
+			["down", "KC_LSHIFT"],
+			["tap", "KC_N"],
+			["up", "KC_LSHIFT"]
+		],
 		[],
 		[],
 		[],
